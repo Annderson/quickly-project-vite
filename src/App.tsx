@@ -1,5 +1,5 @@
 import reactLogo from '@assets/svg/react.svg'
-import '@/App.css'
+import './App.css'
 
 function App() {
   return (

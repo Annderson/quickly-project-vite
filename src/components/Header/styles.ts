@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Layout, Dimensions } from '@styles/index'
+import { Layout, Dimensions } from '@/styles'
 
 const Root = styled(Layout.Container)`
   align-items: center;

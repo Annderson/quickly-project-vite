@@ -2,13 +2,13 @@ import React from 'react'
 import { FiMenu } from 'react-icons/fi'
 import { Colors, Dimensions } from '@/styles'
 import locales from '@locales/header'
-import { Root, LogoContainer } from './styles'
+import { Root, LogoContainer, Title } from './styles'
 
 const Header: React.FC = () => {
   return (
     <Root>
       <LogoContainer>
-        <h2>{locales.title.toUpperCase()}</h2>
+        <Title>{locales.title.toUpperCase()}</Title>
       </LogoContainer>
       <FiMenu
         cursor="pointer"

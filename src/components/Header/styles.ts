@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Layout, Dimensions } from '@/styles'
+import { Layout, Dimensions, TypeScale } from '@/styles'
 
 const Root = styled(Layout.Container)`
   align-items: center;
@@ -13,4 +13,8 @@ const LogoContainer = styled(Layout.CenteredHorizontal)`
   width: ${Dimensions.per.sizeFull};
 `
 
-export { Root, LogoContainer }
+const Title = styled(TypeScale.SansFont20)`
+  font-weight: bold;
+`
+
+export { Root, LogoContainer, Title }

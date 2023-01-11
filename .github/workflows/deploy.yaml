@@ -14,15 +14,10 @@ jobs:
         name: Checkout
 
       - name: Installing dependencies
-        run: npm ci
+        run: yarn install --frozen-lockfile
 
       - name: Build project
-        run: npm run build
-
-      - name: Creating deployment artifact
-        env:
-          GITHUB_SHA: ${{ github.sha }}
-        run: tar -czf "GITHUB_SHA".tar.gz build
+        run: yarn build
 
       - name: Storing artifact
         uses: actions/upload-artifact@v2
